@@ -18,6 +18,7 @@ int maxSubArray(vector<int>& nums) {
   }
 
 //using Kadane's Algorithm: O(n); when only sum is need to return 
+//A subarray with a sum less than 0 will always reduce our answer and so this type of subarray cannot be a part of the subarray with maximum sum.
 int maxSubArray(vector<int>& nums) {
     int n = nums.size();
     long long maxi = INT_MIN, sum = 0;
