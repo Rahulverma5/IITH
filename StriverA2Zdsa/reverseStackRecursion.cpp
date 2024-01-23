@@ -1,6 +1,6 @@
 
 void insertAtBottom(stack<int> &stack, int x){
-    if(stack.empty()){
+    if(stack.empty(){   // include condtion for sorting st.top()<=x if want to sort
         stack.push(x);
         return;
     }
